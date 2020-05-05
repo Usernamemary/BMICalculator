@@ -1,11 +1,58 @@
-/*The original design was made by */
-body {
+/*Mary's note: Trying to make my own css so I can understand it better.
+Nota: Probando crear el CSS desde 0 con ayuda de Google*/
+* {
   margin: 0;
-  background: #25a3ff;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f29f05;
   font-family: 'Roboto', sans-serif;
 }
 
-h1 {
+button {
+  margin-top: 5px;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.question {
+  font-weight: bold;
+}
+
+.question-card {
+  background-color: #ffffff;
+  padding: 5%;
+  margin: 10% 20%;
+  border-radius: 20px 20px;
+  width: 50%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  line-height: 1.5;
+}
+input,
+button,
+label {
+  width: 80%;
+}
+
+@media (max-width: 900px) {
+  .question-card {
+    width: 100%;
+  }
+  input,
+  button,
+  label {
+    width: 100%;
+  }
+}
+/* h1 {
   position: relative;
   color: #fff;
   opacity: 0;
@@ -14,7 +61,7 @@ h1 {
 
 #progress {
   position: absolute;
-  background: #0069ec;
+  background: #f27405;
   height: 100vh;
   width: 0;
   transition: width 0.2s ease-in-out;
@@ -30,7 +77,7 @@ h1 {
 /******
   Form
  ******/
-
+/* 
 #register {
   background: #fff;
   position: relative;
@@ -55,7 +102,7 @@ h1 {
   right: 20px;
   bottom: 10px;
   font-size: 40px;
-  color: #25a3ff;
+  color: #f27405;
   float: right;
   cursor: pointer;
 }
@@ -116,4 +163,4 @@ h1 {
 
 .wrong #inputProgress {
   border-color: #ff2d26;
-}
+} */

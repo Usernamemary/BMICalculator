@@ -7,18 +7,24 @@
     <title>BMI Calculator</title>
   </head>
   <body>
-    <div id="progress"></div>
-
-    <div class="center">
-      <div id="register">
-        <i id="progressButton" class="ion-android-arrow-forward next"></i>
-
-        <div id="inputContainer">
-          <input id="inputField" required autofocus />
-          <label id="inputLabel"></label>
-          <div id="inputProgress"></div>
+    <div class="container">
+      <form action="answer.html" class="question-card">
+        <div>
+          <label id="questionWeight"
+            >What's your weight in kilograms? (Example: 65)"</label
+          >
+          <input type="text" id="questionWeight" />
         </div>
-      </div>
+        <div>
+          <label id="questionHeight">
+            What's your height in centimeters? (Example: 165)"
+          </label>
+          <input type="text" id="questionHeight" />
+        </div>
+        <div id="buttonDiv">
+          <button>Submit</button>
+        </div>
+      </form>
     </div>
   </body>
   <script src="index.js"></script>
