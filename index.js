@@ -1,8 +1,10 @@
-var questionWeight = document.querySelector(#questionWeight);
-var questionHeight = document.querySelector(#questionHeight);
+var questionWeight = document.querySelector('#questionWeight');
+var questionHeight = document.querySelector('#questionHeight');
+var buttonClick = document.querySelector('#buttonClick');
 
-
-
+buttonClick.addEventListener('click', function () {
+  alert(questionWeight.value);
+});
 
 // var questions = [
 //   {
