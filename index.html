@@ -8,7 +8,7 @@
   </head>
   <body>
     <div class="container">
-      <form class="question-card">
+      <div class="question-card">
         <h2>BMI Calculator</h2>
         <div>
           <label for="questionWeight"
@@ -22,10 +22,21 @@
           </label>
           <input type="text" id="questionHeight" />
         </div>
-        <div>
-          <button id="buttonClick">Submit</button>
+
+        <button class="modal-btn">Submit</button>
+      </div>
+    </div>
+
+    <div class="modal-bg">
+      <div class="modal">
+        <div class="modal-close">X</div>
+        <h2>Hello</h2>
+
+        <div id="resultado">
+          Probando
         </div>
-      </form>
+        <!-- <div id="image"><img src="img/bmi1.svg" alt="bodyUnderweight" /></div> -->
+      </div>
     </div>
   </body>
   <script src="index.js"></script>
