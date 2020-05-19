@@ -101,7 +101,8 @@ label {
 /*Responsive */
 
 @media (max-width: 900px) {
-  .question-card {
+  .question-card,
+  .modal {
     width: 100%;
   }
   input,
